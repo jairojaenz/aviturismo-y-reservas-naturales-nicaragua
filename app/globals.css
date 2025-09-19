@@ -8,38 +8,38 @@
 :root {
   /* Updated color tokens to reflect Nicaragua's natural biodiversity */
   --background: oklch(1 0 0); /* Pure white for clean backgrounds */
-  --foreground: oklch(0.205 0 0); /* Dark gray-800 equivalent for primary text */
-  --card: oklch(0.97 0.005 120); /* Soft natural background for cards */
-  --card-foreground: oklch(0.205 0 0);
+  --foreground: #0B2545; /* Dark gray-800 equivalent for primary text */
+  --card: #E6F4EA; /* Soft natural background for cards */
+  --card-foreground: #0B2545;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.205 0 0);
-  --primary: oklch(0.205 0 0); /* Natural dark foundation color */
+  --primary: #F97316; /* Natural dark foundation color */
   --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.556 0 0); /* Muted gray for secondary elements */
+  --secondary: #16A34A; /* Muted gray for secondary elements */
   --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.97 0.005 120); /* Soft natural muted background */
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.646 0.196 293.4); /* Purple accent for interactive elements */
+  --muted: #38BDF8; /* Soft natural muted background */
+  --muted-foreground: #795548;
+  --accent: #795548; /* Purple accent for interactive elements */
   --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
+  --destructive: #5D4037;
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.878 0.01 120); /* Subtle natural border */
   --input: oklch(0.97 0.005 120);
-  --ring: oklch(0.646 0.196 293.4 / 0.5); /* Purple focus ring */
-  --chart-1: oklch(0.696 0.237 350.4); /* Pink for charts */
-  --chart-2: oklch(0.769 0.188 70.08); /* Amber for charts */
-  --chart-3: oklch(0.205 0 0); /* Dark gray for charts */
-  --chart-4: oklch(0.577 0.245 27.325); /* Red for charts */
-  --chart-5: oklch(0.646 0.196 293.4); /* Purple for charts */
+  --ring: #0B2545; /* Purple focus ring */
+  --chart-1: #0B2545; /* Pink for charts */
+  --chart-2: #F97316; /* Amber for charts */
+  --chart-3: #16A34A; /* Dark gray for charts */
+  --chart-4: #5D4037; /* Red for charts */
+  --chart-5: hsl(198, 93%, 60%); /* Purple for charts */
   --radius: 0.5rem;
-  --sidebar: oklch(0.97 0.005 120);
-  --sidebar-foreground: oklch(0.205 0 0);
-  --sidebar-primary: oklch(1 0 0);
-  --sidebar-primary-foreground: oklch(0.205 0 0);
-  --sidebar-accent: oklch(0.646 0.196 293.4);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.878 0.01 120);
-  --sidebar-ring: oklch(0.646 0.196 293.4 / 0.5);
+  --sidebar: #38BDF8;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #F97316;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #16A34A;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #0B2545;
 }
 
 .dark {
@@ -126,6 +126,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.menu-bar {
+  background: hsla(198, 93%, 60%); /* Celeste translúcido */
+  backdrop-filter: blur(12px); /* Efecto glass */
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+  color: var(--sidebar-foreground);
 }
 
 

@@ -4,7 +4,7 @@ import { NaturalReserves } from "@/components/natural-reserves"
 
 export default function ReservasPage() {
   return (
-    <div className="min-h-screen">
+    <div className="menu-bar min-h-screen">
       <Navigation />
       <main className="py-8">
         <div className="container-fluid px-10">
