@@ -7,9 +7,13 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Bird, MapPin, Calendar, BookOpen, Users } from "lucide-react"
 import { cn } from "@/lib/utils"
+import RegistroForm from "@/components/registroform"
+import LoginForm from "@/components/loginform" // 👈 tu formulario de inicio de sesión
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false)
+  const [isLoginOpen, setIsLoginOpen] = useState(false) // 👈 estado para login
   const pathname = usePathname()
 
   const navItems = [
@@ -46,12 +50,39 @@ export function Navigation() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="outline" size="sm" className="hidden md:inline-flex bg-transparent">
-            Iniciar Sesión
-          </Button>
-          <Button size="sm" className="hidden md:inline-flex">
-            Registrarse
-          </Button>
+          {/* Botón Iniciar Sesión Desktop */}
+          <Sheet open={isLoginOpen} onOpenChange={setIsLoginOpen}>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="sm" className="hidden md:inline-flex bg-transparent">
+                Iniciar Sesión
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[400px] sm:w-[500px]">
+              <LoginForm
+                onSubmit={(data) => {
+                  console.log("Datos de login:", data)
+                  setIsLoginOpen(false)
+                }}
+              />
+            </SheetContent>
+          </Sheet>
+
+          {/* Botón Registrarse Desktop */}
+          <Sheet open={isRegisterOpen} onOpenChange={setIsRegisterOpen}>
+            <SheetTrigger asChild>
+              <Button size="sm" className="hidden md:inline-flex">
+                Registrarse
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[400px] sm:w-[500px]">
+              <RegistroForm
+                onSubmit={(data) => {
+                  console.log("Datos de registro:", data)
+                  setIsRegisterOpen(false)
+                }}
+              />
+            </SheetContent>
+          </Sheet>
 
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -78,10 +109,37 @@ export function Navigation() {
                   </Link>
                 ))}
                 <div className="pt-4 space-y-2">
-                  <Button variant="outline" className="w-full bg-transparent">
-                    Iniciar Sesión
-                  </Button>
-                  <Button className="w-full">Registrarse</Button>
+                  {/* Iniciar Sesión Mobile */}
+                  <Sheet open={isLoginOpen} onOpenChange={setIsLoginOpen}>
+                    <SheetTrigger asChild>
+                      <Button variant="outline" className="w-full bg-transparent">
+                        Iniciar Sesión
+                      </Button>
+                    </SheetTrigger>
+                    <SheetContent side="right" className="w-[400px] sm:w-[500px]">
+                      <LoginForm
+                        onSubmit={(data) => {
+                          console.log("Datos de login:", data)
+                          setIsLoginOpen(false)
+                        }}
+                      />
+                    </SheetContent>
+                  </Sheet>
+
+                  {/* Registrarse Mobile */}
+                  <Sheet open={isRegisterOpen} onOpenChange={setIsRegisterOpen}>
+                    <SheetTrigger asChild>
+                      <Button className="w-full">Registrarse</Button>
+                    </SheetTrigger>
+                    <SheetContent side="right" className="w-[400px] sm:w-[500px]">
+                      <RegistroForm
+                        onSubmit={(data) => {
+                          console.log("Datos de registro:", data)
+                          setIsRegisterOpen(false)
+                        }}
+                      />
+                    </SheetContent>
+                  </Sheet>
                 </div>
               </nav>
             </SheetContent>

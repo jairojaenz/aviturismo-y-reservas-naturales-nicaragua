@@ -22,7 +22,7 @@ export function EducationCard() {
          </div>
          
           <div className="justify-center items-center text-center">
-                <h4 className="text-2xl font-semibold mb-2 mt-6">Beneficios en la educación de las y los niños</h4>
+                <h4 className="text-2xl font-semibold mb-2 mt-6">BENEFICIOS EN LA EDUCACIÒN DE LAS Y LOS NIÑOS</h4>
         </div>
         
             <section>
@@ -33,7 +33,7 @@ export function EducationCard() {
                                     titulo: "1- FORTALECE LA CONEXIÓN CON LA NATURALEZA",
                                     descripcion:
                                         "Los niños y niñas que desarrollan actividades en la naturaleza, poco a poco, se sienten más cómodos y aumentan su capacidad de concentración, al grado en que el sol, la arena, el viento, los insectos y demás elementos que podrían ser molestos ahora, dejan de serlo y pueden disfrutar de los entornos naturales con mayor templanza y confianza.",
-                                         image: "/educacion.jpg"
+                                         image: "/istockphoto-2179436187-612x612.jpg"
                                
                                 },
                                 {
@@ -46,26 +46,26 @@ export function EducationCard() {
                                     titulo: "3- APRENDIZAJE AUTÓNOMO",
                                     descripcion:
                                         "El manejo de los equipos, muchas veces, implica que ellos desarrollen sus propias estrategias en la manera para manipularlos y adaptándolos a sus necesidades, de igual forma, tienen la oportunidad de seguir investigando por su cuenta aquello que les cause curiosidad, e inclusive, utilizar herramientas digitales por su cuenta.",
-                                       image: "/ambiente.jpg" 
+                                       image: "/istockphoto-2200428543-612x612.jpg" 
                                 },
                                 
                                 {
                                     titulo: "4- FOMENTO DE LA CREATIVIDAD",
                                     descripcion:
                                         "Las actividades relacionadas con la observación de aves pueden incluir elementos creativos como el dibujo, la escritura o la narración de historias sobre las aves observadas. Esto estimula la imaginación y la expresión artística de los niños y niñas.",
-                                       image: "/conciencia.jpg" 
+                                       image: "/educacion.jpg" 
                                 },
                                 {
                                     titulo: "5- PROMOCIÓN DE LA SALUD FÍSICA Y MENTAL",
                                     descripcion:
                                         "El tiempo al aire libre y la actividad física asociada con la observación de aves contribuyen al bienestar físico y mental de los niños y niñas. El contacto con la naturaleza se ha relacionado con la reducción del estrés y la mejora del estado de ánimo.",
-                                          image: "/naturaleza.jpg" 
+                                          image: "/istockphoto-1094443430-612x612.jpg" 
                                 },
                                 {
                                     titulo: "6- DESARROLLO DE HABILIDADES SOCIALES",
                                     descripcion:
                                         "Las actividades en grupo fomentan la interacción social, el trabajo en equipo y la cooperación entre los niños y niñas. Aprenden a respetar las opiniones de los demás, a compartir sus descubrimientos y a colaborar para lograr objetivos comunes.",
-                                        image: "/natu.jpg" 
+                                        image: "/istockphoto-2164052085-612x612.jpg" 
                                 },
                                 {
                                     titulo: "7- CONCIENCIA AMBIENTAL Y RESPONSABILIDAD",
