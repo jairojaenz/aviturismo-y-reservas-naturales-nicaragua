@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Eye, EyeOff } from "lucide-react"; // 👁️
+import { Eye, EyeOff } from "lucide-react"; // 
 
 interface RegistroFormProps {
   onSubmit?: (data: { nombre: string; email: string; password: string }) => void;
@@ -10,7 +10,7 @@ const RegistroForm: React.FC<RegistroFormProps> = ({ onSubmit }) => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // 👈 estado para ver/ocultar
+  const [showPassword, setShowPassword] = useState(false); //
   const [error, setError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -73,7 +73,7 @@ const RegistroForm: React.FC<RegistroFormProps> = ({ onSubmit }) => {
           <div className="relative">
             <input
               id="password"
-              type={showPassword ? "text" : "password"} // 👈 alterna
+              type={showPassword ? "text" : "password"} // 
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

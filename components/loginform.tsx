@@ -9,7 +9,7 @@ interface loginFormProps {
 const LoginForm: React.FC<loginFormProps> = ({ onSubmit }) => {
   const [Usuario, setNombre] = useState("");
   const [Password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // 👈 nuevo estado
+  const [showPassword, setShowPassword] = useState(false); // 
   const [error, setError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -58,7 +58,7 @@ const LoginForm: React.FC<loginFormProps> = ({ onSubmit }) => {
           <div className="relative">
             <input
               id="Password"
-              type={showPassword ? "text" : "password"} // 👈 alterna
+              type={showPassword ? "text" : "password"} 
               value={Password}
               onChange={(e) => setPassword(e.target.value)}
               required
