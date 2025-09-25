@@ -19,9 +19,9 @@ Este proyecto busca promover el **aviturismo en Nicaragua** mediante una aplicac
 ## Instalación
 1. Clona este repositorio:  
    ```bash
-   git clone https://github.com/jairojaenz/Plataforma-de-aviturismo-y-reservas-naturales.git
+   git clone https://github.com/jairojaenz/aviturismo-y-reservas-naturales-nicaragua.git
 
-2. cd Plataforma-de-aviturismo-y-reservas-naturales
+2. cd aviturismo-y-reservas-naturales-nicaragua
 3. npm install
 
 
