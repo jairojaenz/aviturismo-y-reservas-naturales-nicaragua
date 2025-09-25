@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Eye, EyeOff } from "lucide-react"; // 
+import { Eye, EyeOff } from "lucide-react"; 
+import Image from "next/image";// 
 
 interface RegistroFormProps {
   onSubmit?: (data: { nombre: string; email: string; password: string }) => void;
@@ -32,6 +33,7 @@ const RegistroForm: React.FC<RegistroFormProps> = ({ onSubmit }) => {
         onSubmit={handleSubmit}
         className="max-w-md w-full p-12 bg-white rounded-2xl shadow-md space-y-8"
       >
+        <Image src="/Avinic_Logo-wbg.png" alt="Logo" width={360} height={360} objectFit="cover"/>
         <h2 className="text-2xl font-semibold text-center">Registro de Usuario</h2>
         {error && <div className="text-red-500 text-sm text-center">{error}</div>}
 

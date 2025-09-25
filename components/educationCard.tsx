@@ -22,7 +22,7 @@ export function EducationCard() {
          </div>
          
           <div className="justify-center items-center text-center">
-                <h4 className="text-2xl font-semibold mb-2 mt-6">BENEFICIOS EN LA EDUCACIÒN DE LAS Y LOS NIÑOS</h4>
+                <h4 className="text-2xl font-semibold mt-12 my-12 text-primary">BENEFICIOS EN LA EDUCACIÓN DE LAS Y LOS NIÑOS</h4>
         </div>
         
             <section>
@@ -83,12 +83,12 @@ export function EducationCard() {
                             return (
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     {beneficios.map((beneficio, idx) => (
-                                        <div key={idx} className="bg-white rounded-lg shadow p-6">
+                                        <div key={idx} className="bg-white rounded-lg shadow-lg p-6 border-1">
                                             {beneficio.image && (
                                                 <img
                                                     src={beneficio.image}
                                                     alt={beneficio.titulo}
-                                                    className="w-full h-50 object-contain rounded mb-4 bg-white"
+                                                    className="w-full h-50 object-cover rounded-md mb-4 bg-white"
                                                 />
                                             )}
                                             <h5 className="font-bold mb-2">{beneficio.titulo}</h5>
@@ -117,7 +117,7 @@ export function EducationCard() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/qGcObdRXZxU"
                         title="Importancia de las áreas protegidas"
                         frameBorder="0"
@@ -127,7 +127,7 @@ export function EducationCard() {
                 </div>
                 <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/zxbGy0Fu2WA"
                         title="Conservación de aves en Nicaragua"
                         frameBorder="0"
@@ -137,7 +137,7 @@ export function EducationCard() {
                 </div>
                    <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/EBYGcbbaECE"
                         title="Conservación de aves en Nicaragua"
                         frameBorder="0"
@@ -147,7 +147,7 @@ export function EducationCard() {
                 </div>
                    <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/_hdlBIj1Q1M"
                         title="Conservación de aves en Nicaragua"
                         frameBorder="0"
@@ -157,7 +157,7 @@ export function EducationCard() {
                 </div>
                    <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/II99J0UlsRY"
                         title="Conservación de aves en Nicaragua"
                         frameBorder="0"
@@ -167,7 +167,7 @@ export function EducationCard() {
                 </div>
                    <div className="aspect-video aspect-w-16 aspect-h-9 mt-6">
                     <iframe
-                        className="w-full h-full"
+                        className="w-150 h-80 rounded-lg"
                         src="https://www.youtube.com/embed/foXv-2vjkBw"
                         title="Conservación de aves en Nicaragua"
                         frameBorder="0"

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react"; 
+import Image from "next/image";//
 
 interface loginFormProps {
   onSubmit?: (data: { Usuario: string; Password: string }) => void;
@@ -30,6 +31,7 @@ const LoginForm: React.FC<loginFormProps> = ({ onSubmit }) => {
         onSubmit={handleSubmit}
         className="max-w-md w-full p-12 bg-white rounded-2xl shadow-md space-y-8"
       >
+        <Image src="/Avinic_Logo-wbg.png" alt="Logo" width={360} height={360} objectFit="cover"/>
         <h2 className="text-2xl font-semibold text-center">Iniciar Sesión</h2>
         {error && (
           <div className="text-red-500 text-sm text-center">{error}</div>
