@@ -17,7 +17,7 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: #16A34A; /* Muted gray for secondary elements */
   --secondary-foreground: oklch(1 0 0);
-  --muted: #38BDF8; /* Soft natural muted background */
+  --muted: #ffffff; /* Soft natural muted background */
   --muted-foreground: #795548;
   --accent: #795548; /* Purple accent for interactive elements */
   --accent-foreground: oklch(1 0 0);
@@ -30,9 +30,9 @@
   --chart-2: #F97316; /* Amber for charts */
   --chart-3: #16A34A; /* Dark gray for charts */
   --chart-4: #5D4037; /* Red for charts */
-  --chart-5: hsl(198, 93%, 60%); /* Purple for charts */
+  --chart-5: hsl(0, 0%, 100%); /* Purple for charts */
   --radius: 0.5rem;
-  --sidebar: #38BDF8;
+  --sidebar: #ffffff;
   --sidebar-foreground: #FFFFFF;
   --sidebar-primary: #F97316;
   --sidebar-primary-foreground: #FFFFFF;

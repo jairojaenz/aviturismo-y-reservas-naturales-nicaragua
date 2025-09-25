@@ -55,8 +55,8 @@ export function BirdCard({ bird, onViewDetails }: BirdCardProps) {
   }
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative h-48 w-full">
+    <Card className="overflow-clip hover:shadow-lg transition-shadow pt-0">
+      <div className="relative h-64 w-full">
         <Image src={bird.image || "/placeholder.svg"} alt={bird.name} fill className="object-cover" />
         <div className="absolute top-2 right-2">
           <Badge className={getTypeColor(bird.type)}>{bird.type}</Badge>

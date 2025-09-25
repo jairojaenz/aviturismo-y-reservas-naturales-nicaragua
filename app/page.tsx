@@ -6,9 +6,9 @@ import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <div className="menu-bar min-h-screen">
+    <div className="min-h-screen">
       <Navigation />
-      <main>
+      <main className="items-center justify-center bg-white">
         <HeroSection />
         <FeaturesSection />
         <StatsSection />

@@ -42,28 +42,28 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="bg-muted/30">
+    <section>
       <div className="container:md my-10 mx-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Todo lo que Necesitas para tu Aventura de Aviturismo
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
+          <p className="text-lg text-foreground max-w-2xl mx-auto">
             Una plataforma completa que conecta a los amantes de las aves con la rica biodiversidad de Nicaragua
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow">
+            <Card key={index} className="border-1 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                  <feature.icon className="h-6 w-6 text-accent" />
+                <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center mb-4">
+                  <feature.icon className="h-6 w-6 text-white" />
                 </div>
                 <CardTitle className="text-xl">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base leading-relaxed">{feature.description}</CardDescription>
+                <CardDescription className="text-gray-400 leading-relaxed">{feature.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

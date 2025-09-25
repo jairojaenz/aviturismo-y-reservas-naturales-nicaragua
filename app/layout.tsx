@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Aviturismo Nicaragua',
-  description: 'Plataforma para la conservación y el aviturismo en Nicaragua',
+  title: 'Plataforma de Aviturismo y reservas Nicaragua',
+  description: 'Plataforma para la promoción del aviturismo y reservas naturales en Nicaragua.',
   generator: 'Next.js',
 }
 

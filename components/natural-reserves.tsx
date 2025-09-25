@@ -19,7 +19,7 @@ const reservesData = [
     elevation: "800-1,450 msnm",
     description:
       "Reserva de biosfera con bosque nuboso único en Nicaragua. Hogar del quetzal y más de 200 especies de aves.",
-    image: "/miraflor-cloud-forest-reserve-with-misty-mountains.jpg",
+    image: "/Reserva Natural Miraflor.jpg",
     birdSpecies: 236,
     activities: ["Aviturismo", "Senderismo", "Turismo Rural", "Observación de Orquídeas"],
     services: ["Guías Locales", "Hospedaje Rural", "Alimentación", "Transporte"],
@@ -37,7 +37,7 @@ const reservesData = [
     area: "263,929 hectáreas",
     elevation: "0-200 msnm",
     description: "La segunda reserva de biosfera más grande de Nicaragua. Parte del corredor biológico mesoamericano.",
-    image: "/indio-maiz-rainforest-with-river-and-dense-canopy.jpg",
+    image: "/Reserva Biológica Indio Maiz.jpg",
     birdSpecies: 389,
     activities: ["Aviturismo", "Navegación Fluvial", "Pesca Deportiva", "Fotografía de Naturaleza"],
     services: ["Guías Especializados", "Embarcaciones", "Equipo de Observación", "Campamentos"],
@@ -223,7 +223,7 @@ export function NaturalReserves() {
       </div>
 
       {filteredReserves.length === 0 && (
-        <Card className="text-center py-12">
+        <Card className="text-center">
           <CardContent>
             <div className="text-muted-foreground">
               <Search className="h-12 w-12 mx-auto mb-4 opacity-50" />

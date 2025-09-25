@@ -1,15 +1,17 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Bird, Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="container px-4 py-12">
+    <footer className="bg-secondary text-primary-foreground">
+      <div className="container-fluid px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
+            
             <Link href="/" className="flex items-center space-x-2">
-              <Bird className="h-8 w-8 text-accent" />
+              <Image src="/AVINIC_Logo Negativo.png" alt="Logo" width={84} height={84} objectFit="cover" />
               <span className="text-xl font-bold">Aviturismo Nicaragua</span>
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
@@ -90,7 +92,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-primary-foreground/60">
-            © 2024 Aviturismo Nicaragua. Todos los derechos reservados.
+            © 2025 Aviturismo Nicaragua. Todos los derechos reservados.
           </p>
         </div>
       </div>

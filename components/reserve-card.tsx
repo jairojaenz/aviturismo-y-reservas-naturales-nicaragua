@@ -47,8 +47,8 @@ export function ReserveCard({ reserve, onViewDetails }: ReserveCardProps) {
   }
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative h-48 w-full">
+    <Card className="hover:shadow-lg transition-shadow pt-0 overflow-clip">
+      <div className="relative h-80 w-full">
         <Image src={reserve.image || "/placeholder.svg"} alt={reserve.name} fill className="object-cover" />
         <div className="absolute top-2 right-2 flex gap-2">
           <Badge className={getDifficultyColor(reserve.difficulty)}>{reserve.difficulty}</Badge>
