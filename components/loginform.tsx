@@ -26,12 +26,12 @@ const LoginForm: React.FC<loginFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-80">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <form
         onSubmit={handleSubmit}
-        className="max-w-md w-full p-12 bg-white rounded-2xl shadow-md space-y-8"
+        className="max-w-md w-full p-8 bg-white rounded-2xl shadow-md space-y-4"
       >
-        <Image src="/Avinic_Logo-wbg.png" alt="Logo" width={360} height={360} objectFit="cover"/>
+        <Image src="/Avinic_Logo-wbg.png" alt="Logo" width={300} height={300} objectFit="cover"/>
         <h2 className="text-2xl font-semibold text-center">Iniciar Sesión</h2>
         {error && (
           <div className="text-red-500 text-sm text-center">{error}</div>
